@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "patterns": ["\\bhello\\b", "\\bhi\\b", "\\bhey\\b", "\\bhowdy\\b"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What's on your mind?"]
+    },
+    {
+      "intent": "provide_name",
+      "patterns": ["(?:my name is|i am|call me) (?P<name>[a-zA-Z]+)"],
+      "responses": ["Nice to meet you, {name}!", "Hello {name}, how can I assist you?"]
+    },
+    {
+      "intent": "favourite_color",
+      "patterns": ["(?:my favourite color is|i love the color) (?P<color>[a-zA-Z]+)"],
+      "responses": ["{color} is a beautiful color!", "I love {color} too!"]
+    },
+    {
+      "intent": "feeling_sad",
+      "patterns": ["\\bsad\\b"],
+      "responses": ["I'm sorry to hear you're feeling down. I'm here to chat if you need it.", "Things will get better!"]
+    },
+    {
+      "intent": "goodbye",
+      "patterns": ["\\bbye\\b", "\\bquit\\b", "\\bexit\\b", "\\bsee ya\\b"],
+      "responses": ["Goodbye! Have a great day!", "Catch you later!"]
+    }
+  ]
+}
