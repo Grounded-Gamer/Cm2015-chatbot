@@ -2,6 +2,28 @@
   "unhappy": "sad",
   "depressed": "sad",
   "miserable": "sad",
+  
+  "mad": "frustrated",
+  "angry": "frustrated",
+  "annoyed": "frustrated",
+  "pissed": "frustrated",
+
+  "uni": "university",
+  "college": "university",
+  "school": "university",
+
+  "docs": "documents",
+  "files": "documents",
+  "papers": "documents",
+
+  "bachelors": "undergraduate",
+  "masters": "graduate",
+  "phd": "doctorate",
+
+  "nc": "dosv",
+  "numerus": "dosv",
+  "clausus": "dosv",
+
   "greet": "hello",
   "farewell": "bye"
 }

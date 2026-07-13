@@ -3,37 +3,44 @@
         {
             "intent": "greeting",
             "patterns": ["\\bhi\\b", "how are you", "\\bhello\\b", "good day", "whats up"],
-            "responses": ["Hello! How can I help you with your university application today?", "Hi there! Are you looking for admission guidance?"]
+            "responses": ["Hello! How can I help you with your university application today?", "Hi there! Are you looking for admission guidance?"],
+            "suggestions": ["I want to study in Berlin", "What is DoSV?", "Do I need TestAS?"]
         },
         {
             "intent": "goodbye",
             "patterns": ["cya", "see you", "bye", "see you later", "goodbye", "quit", "exit"],
-            "responses": ["Good luck with your applications! Goodbye.", "Talk to you later, and best of luck!"]
+            "responses": ["Good luck with your applications! Goodbye.", "Talk to you later, and best of luck!"],
+            "suggestions": []
         },
         {
             "intent": "target_city",
             "patterns": ["(?:i want to study in|applying for programs in|going to) (?P<city>[a-zA-Z]+)"],
-            "responses": ["Programs in {city} are highly competitive! Make sure you check if your senior school certificate examination needs to be routed through uni-assist for {city} universities."]
+            "responses": ["Programs in {city} are highly competitive! Make sure you check if your senior school certificate examination needs to be routed through uni-assist for {city} universities."],
+            "suggestions": ["How to use uni-assist", "What is the DoSV procedure?", "Exit"]
         },
         {
             "intent": "dosv_explanation",
             "patterns": ["what is hochschulstart", "what is dosv", "dialogue oriented service procedure", "only necessary for dosv"],
-            "responses": ["hochschulstart.de coordinates the Dialogue-Oriented Service Procedure (DoSV). It is primarily necessary for courses with nationwide restricted admission limits (Numerus Clausus)."]
+            "responses": ["hochschulstart.de coordinates the Dialogue-Oriented Service Procedure (DoSV). It is primarily necessary for courses with nationwide restricted admission limits (Numerus Clausus)."],
+            "suggestions": ["What is TestAS?", "How to use uni-assist"]
         },
         {
             "intent": "testas_info",
             "patterns": ["what is testas", "testas obligation", "do i need testas", "testas exam"],
-            "responses": ["TestAS is a central standardized scholastic aptitude test. Many universities have made it an obligation for non-EU applicants to assess cognitive skills."]
+            "responses": ["TestAS is a central standardized scholastic aptitude test. Many universities have made it an obligation for non-EU applicants to assess cognitive skills."],
+            "suggestions": ["I want to study in Munich", "What is DoSV?"]
         },
         {
             "intent": "uni_assist_help",
             "patterns": ["what should i pick here for applying at uni assist", "uni assist application", "how to use uni assist"],
-            "responses": ["For uni-assist, you will generally need to upload your senior school certificate examination and language proofs. Make sure to select the specific semester you are targeting."]
+            "responses": ["For uni-assist, you will generally need to upload your senior school certificate examination and language proofs. Make sure to select the specific semester you are targeting."],
+            "suggestions": ["Do I need TestAS?", "Exit"]
         },
         {
             "intent": "expressing_frustration",
             "patterns": ["\\bstressed\\b", "\\bconfused\\b", "\\bhard\\b", "\\blost\\b", "\\bfrustrated\\b", "\\boverwhelmed\\b"],
-            "responses": ["I know navigating university portals and requirements can be incredibly overwhelming. Take a deep breath! What specific part is confusing you?"]
+            "responses": ["I know navigating university portals and requirements can be incredibly overwhelming. Take a deep breath! What specific part is confusing you?"],
+            "suggestions": ["What is DoSV?", "How to use uni-assist", "Do I need TestAS?"]
         }
     ]
 }
